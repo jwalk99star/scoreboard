@@ -2,7 +2,7 @@
 // ✅write the 'functions' to add points to correct team when buttons are clicked
 // ✅make 2 scoreboards, 1 for each team that displays those growing totals
 // ✅refactor down to 2 functions..?
-// ☑️refactor down to 1 function..? *NOTE: Jeremy said that may be tricky at this point. multiple parameters and arguments.
+// ☑️❌refactor down to 1 function..? *NOTE: Jeremy said that may be tricky at this point. multiple parameters and arguments.
 //  I'll hold off on that one.
 // ☑️make a reset button/function to set scores back to zero and start over
 // ☑️make it look cool (figma for reference)

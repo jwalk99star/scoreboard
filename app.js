@@ -45,12 +45,18 @@ function scoreHome(num) {
   // }
   
   function reset() {
+    
     let visitorScore = 0
     let visitorElement = document.getElementById('visitor')
     visitorElement.innerText = visitorScore
     
     let homeScore = 0
-    console.log('reset button');
     let homeElement = document.getElementById('home')
     homeElement.innerText = homeScore  
+    
+    localStorage.removeItem(visitorScore, homeScore)
+
+    console.log(visitorScore, homeScore)
+
+    console.log('reset button');
 }

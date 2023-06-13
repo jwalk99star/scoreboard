@@ -30,33 +30,35 @@ function scoreVisitor(num) {
 
 function scoreHome(num) {
   homeScore += num
-  console.log(`home score: `, homeScore);  
+  console.log(`home score: `, homeScore);
   let homeElement = document.getElementById('home')
   // console.log('homeElement:', homeElement);
-  homeElement.innerText = homeScore  
+  homeElement.innerText = homeScore
 }
 
 // function scoreHome3() {
-  //   homeScore += 3
-  //   console.log(`home score: `, homeScore);
-  //   let homeElement = document.getElementById('home')
-  //   console.log('homeElement:', homeElement);
-  //   homeElement.innerText = homeScore
-  // }
-  
-  function reset() {
-    
-    let visitorScore = 0
-    let visitorElement = document.getElementById('visitor')
-    visitorElement.innerText = visitorScore
-    
-    let homeScore = 0
-    let homeElement = document.getElementById('home')
-    homeElement.innerText = homeScore  
-    
-    localStorage.removeItem(visitorScore, homeScore)
+//   homeScore += 3
+//   console.log(`home score: `, homeScore);
+//   let homeElement = document.getElementById('home')
+//   console.log('homeElement:', homeElement);
+//   homeElement.innerText = homeScore
+// }
 
-    console.log(visitorScore, homeScore)
+function reset() {
 
-    console.log('reset button');
+  visitorScore = 0
+  let visitorElement = document.getElementById('visitor')
+  visitorElement.innerText = visitorScore
+
+  homeScore = 0
+  let homeElement = document.getElementById('home')
+  homeElement.innerText = homeScore
+
+  // localStorage.clear()
+
+  // localStorage.setItem('visitorScore', visitorScore)
+
+  console.log(visitorScore, homeScore)
+
+  console.log('reset button');
 }
